@@ -1,0 +1,16 @@
+生成原型图到D:\axure-pages
+（最好用短英文）
+
+然后打开Git Bash
+输入以下命令：
+
+cd D:
+
+cd axure
+
+git add .
+git commit -m 'add docs'
+git push origin main
+
+访问地址：
+https://wolf-big.github.io/axure/原型图文件夹名称
