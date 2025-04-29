@@ -1,19 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="78px" height="56px" xmlns="http://www.w3.org/2000/svg">
+<svg version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="73px" height="73px" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter x="1056px" y="695px" width="78px" height="56px" filterUnits="userSpaceOnUse" id="filter43">
-      <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetInner" />
-      <feGaussianBlur stdDeviation="2.5" in="shadowOffsetInner" result="shadowGaussian" />
-      <feComposite in2="shadowGaussian" operator="atop" in="SourceAlpha" result="shadowComposite" />
-      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.698039215686274 0  " in="shadowComposite" />
-    </filter>
-    <g id="widget44">
-      <path d="M 1094 699  C 1113.04 699  1128 709.12  1128 722  C 1128 734.88  1113.04 745  1094 745  C 1074.96 745  1060 734.88  1060 722  C 1060 709.12  1074.96 699  1094 699  Z " fill-rule="nonzero" fill="#f8d438" stroke="none" />
-      <path d="M 1094 699.5  C 1112.76 699.5  1127.5 709.4  1127.5 722  C 1127.5 734.6  1112.76 744.5  1094 744.5  C 1075.24 744.5  1060.5 734.6  1060.5 722  C 1060.5 709.4  1075.24 699.5  1094 699.5  Z " stroke-width="1" stroke="#ffffff" fill="none" />
-    </g>
+    <radialGradient cx="778.076923076923" cy="698.638461538462" r="27.1012500000001" gradientTransform="matrix(-1 0 0 -0.999999999999996 1556.15384615385 1397.27692307692 )" gradientUnits="userSpaceOnUse" id="RadialGradient114">
+      <stop id="Stop115" stop-color="#ffffff" offset="0" />
+      <stop id="Stop116" stop-color="#f2f2f2" offset="0.64" />
+      <stop id="Stop117" stop-color="#d7d7d7" offset="1" />
+    </radialGradient>
   </defs>
-  <g transform="matrix(1 0 0 1 -1056 -695 )">
-    <use xlink:href="#widget44" filter="url(#filter43)" />
-    <use xlink:href="#widget44" />
+  <g transform="matrix(1 0 0 1 -750 -670 )">
+    <path d="M 786.5 670  C 806.94 670  823 686.06  823 706.5  C 823 726.94  806.94 743  786.5 743  C 766.06 743  750 726.94  750 706.5  C 750 686.06  766.06 670  786.5 670  Z " fill-rule="nonzero" fill="url(#RadialGradient114)" stroke="none" />
+    <path d="M 786.5 670.5  C 806.66 670.5  822.5 686.34  822.5 706.5  C 822.5 726.66  806.66 742.5  786.5 742.5  C 766.34 742.5  750.5 726.66  750.5 706.5  C 750.5 686.34  766.34 670.5  786.5 670.5  Z " stroke-width="1" stroke="#797979" fill="none" />
   </g>
 </svg>
