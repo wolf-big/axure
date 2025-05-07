@@ -1012,7 +1012,7 @@
   left:0px;
   top:0px;
   width:400px;
-  height:271px;
+  height:294px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
   border:none;
@@ -1027,7 +1027,7 @@
   left:440px;
   top:922px;
   width:400px;
-  height:271px;
+  height:294px;
   display:flex;
 }
 #u73 .text {
@@ -1251,7 +1251,7 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:115px;
+  width:76px;
   height:16px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
@@ -1266,9 +1266,9 @@
 #u79 {
   border-width:0px;
   position:absolute;
-  left:686px;
+  left:705px;
   top:400px;
-  width:115px;
+  width:76px;
   height:16px;
   display:flex;
   font-size:14px;
@@ -1283,7 +1283,7 @@
 }
 #u79_text {
   border-width:0px;
-  word-wrap:break-word;
+  white-space:nowrap;
   text-transform:none;
 }
 #u80_div {
