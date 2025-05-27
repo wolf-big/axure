@@ -96,10 +96,10 @@ var toolBarOnly = true;
     };
 
     $(window).bind('load', function () {
-        if ((CHROME && BROWSER_VERSION < 999) || // First 2018 release
-            (SAFARI && BROWSER_VERSION < 999) || // Minor version 10
-            (FIREFOX && BROWSER_VERSION < 999) || // Support Quantum 
-            ($axure.browser.isEdge && BROWSER_VERSION < 999) || // 15 for mobile devices (else could go 16, possibly 17)
+        if ((CHROME && BROWSER_VERSION < 1) || // First 2018 release
+            (SAFARI && BROWSER_VERSION < 1) || // Minor version 10
+            (FIREFOX && BROWSER_VERSION < 1) || // Support Quantum 
+            ($axure.browser.isEdge && BROWSER_VERSION < 1) || // 15 for mobile devices (else could go 16, possibly 17)
             (!$axure.browser.isEdge && IE)) {
             if (!QQ && !UC) appendOutOfDateNotification();
         }
@@ -108,7 +108,7 @@ var toolBarOnly = true;
             window.location = 'resources/chrome/chrome.html';
         }
 
-        if (FIREFOX && BROWSER_VERSION >= 68 && document.location.href.indexOf('file://') >= 0) { //detecting firefox and local
+        if (FIREFOX && BROWSER_VERSION >= 999 && document.location.href.indexOf('file://') >= 0) { //detecting firefox and local
             window.location = 'resources/chrome/firefox.html';
         }
     });
