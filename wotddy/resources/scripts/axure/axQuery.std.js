@@ -413,36 +413,6 @@ $axure.internal(function($ax) {
         }
     };
 
-    $ax.public.fn.getCursorOffset = function (elementId) {
-        var cursorOffset = { x: 0, y: 0 };
-
-        var element = $ax('#' + elementId);
-        var dynamicPanelParents = element.getParents(true, 'dynamicPanel')[0] || [];
-        // repeater can be only one
-        var repeaterParents = element.getParents(false, 'repeater');
-        var relativeLocationParents = dynamicPanelParents.concat(repeaterParents);
-        var getParentOffset = function (elementId, parentId) {
-            var parentType = $ax.getTypeFromElementId(parentId);
-            if ($ax.public.fn.IsDynamicPanel(parentType)) {
-                return $ax('#' + parentId).offsetLocation();
-            }
-            if ($ax.public.fn.IsRepeater(parentType)) {
-                return $ax.repeater.getRepeaterElementOffset(parentId, elementId);
-            }
-            return { x: 0, y: 0 };
-        };
-        for (var i = 0; i < relativeLocationParents.length; i++) {
-            var parentId = relativeLocationParents[i];
-            if (parentId) {
-                var parentOffset = getParentOffset(elementId, parentId);
-                cursorOffset.x += parentOffset.x;
-                cursorOffset.y += parentOffset.y;
-            }
-        }
-        return cursorOffset;
-    }
-
-
     $ax.public.fn.moveTo = function (x, y, options) {
         var elementIds = this.getElementIds();
         for(var index = 0; index < elementIds.length; index++) {
@@ -1042,7 +1012,7 @@ $axure.internal(function($ax) {
                 if(input.length) jobj = input;
 
                 //if (OS_MAC && WEBKIT && $ax.public.fn.IsComboBox(widgetType)) jobj.css('color', enabled ? '' : 'grayText');
-                if($ax.public.fn.IsCheckBox(widgetType) || $ax.public.fn.IsRadioButton(widgetType)) return this;
+
                 if(enabled) jobj.prop('disabled', false);
                 else jobj.prop('disabled', true);
             }
