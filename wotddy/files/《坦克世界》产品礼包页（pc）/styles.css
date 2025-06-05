@@ -3632,3 +3632,33 @@
   text-transform:none;
   visibility:hidden;
 }
+#u92_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:78px;
+  height:100px;
+}
+#u92 {
+  border-width:0px;
+  position:absolute;
+  left:1419px;
+  top:362px;
+  width:78px;
+  height:100px;
+  display:flex;
+}
+#u92 .text {
+  position:absolute;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u92_text {
+  border-width:0px;
+  word-wrap:break-word;
+  text-transform:none;
+  visibility:hidden;
+}
