@@ -7851,3 +7851,33 @@
   white-space:nowrap;
   text-transform:none;
 }
+#u382_img {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:16px;
+  height:16px;
+}
+#u382 {
+  border-width:0px;
+  position:absolute;
+  left:1267px;
+  top:914px;
+  width:16px;
+  height:16px;
+  display:flex;
+}
+#u382 .text {
+  position:absolute;
+  align-self:center;
+  padding:2px 2px 2px 2px;
+  box-sizing:border-box;
+  width:100%;
+}
+#u382_text {
+  border-width:0px;
+  word-wrap:break-word;
+  text-transform:none;
+  visibility:hidden;
+}
